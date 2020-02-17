@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TRVL - A Smarter Vacation</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="timeline-content">
+  <h1>Trip to {{end_location}}</h1>
+  <h1>{{date}}</h1>
+
+  <ul class="timeline">
+    <li class="event">
+      <h3>{{header1}}</h3>
+      <p>{{sub1}}</p>
+      <p>{{sub2}}</p>
+    </li>
+    <li class="event">
+      <h3>What to Wear:</h3>
+      <p>Weather: {{raw_weather}}°F</p>
+      <p>On this day, wear a {{shirt}} with {{pants}} and {{shoes}}. It might also be nice to carry a {{accessory}} with you on your trip.</p>
+    </li>
+    <li class="event" data-date="9:00AM">
+      <h3>Breakfast at {{b_name}}</h3>
+      <p>Address: {{b_address}}</p>
+      <p>Price: {{b_price}}</p>    
+      <p>{{b_url}}</p>
+    </li>
+    <li class="event" data-date="9-12PM">
+      <h3>Check into {{h_name}}</h3>
+      <p>Address: {{h_address}}</p>
+      <p>Price: {{h_price}}</p>
+      <p>{{h_url}}</p>
+    </li>    
+    <li class="event" data-date="12:00PM">
+      <h3>Lunch at {{l_name}}</h3>
+      <p>Address: {{l_address}}</p>
+      <p>Price: {{l_price}}</p>    
+      <p>{{l_url}}</p>
+    </li>
+    <li class="event" data-date="2:00PM">
+      <h3>{{a1_name}}</h3>
+      <p>Address: {{a1_address}}</p>
+      <p>Price: {{a1_price}}</p>    
+      <p>{{a1_url}}</p>
+    </li>
+    <li class="event" data-date="4:00PM">
+      <h3>{{a2_name}}</h3>
+      <p>Address: {{a2_address}}</p>
+      <p>Price: {{a2_price}}</p>    
+      <p>{{a2_url}}</p>
+    </li>    
+    <li class="event" data-date="6:00PM">
+      <h3>Dinner at {{d_name}}</h3>
+      <p>Address: {{d_address}}</p>
+      <p>Price: {{d_price}}</p>    
+      <p>{{d_url}}</p>
+    </li>
+    <li class="event" data-date="8:00PM">
+      <h3>{{a3_name}}</h3>
+      <p>Address: {{a3_address}}</p>
+      <p>Price: {{a3_price}}</p>    
+      <p>{{a3_url}}</p>
+    </li>
+    <li class="event" data-date="9:00PM">
+      <h3>Head Back to {{h_name}}</h3>
+      <p>Address: {{h_address}}</p>
+    </li>
+  </ul>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
